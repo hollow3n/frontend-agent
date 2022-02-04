@@ -31,7 +31,7 @@ export default function CreateClient() {
     ]
 
     const postData = () => {
-        axios.post(`http://localhost:/client/`, {  
+        axios.post(`http://localhost:9999/client/`, {  
             civilite,
             prenom,
             nom,

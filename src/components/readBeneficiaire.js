@@ -25,14 +25,14 @@ export default function Read() {
     }
 
     const getData = () => {
-        axios.get(`http://localhost:/beneficiaire/`)
+        axios.get(`http://localhost:9999/beneficiaire/`)
             .then((getData) => {
                 setAPIData(getData.data);
             })
     }
 
     const onDelete = (id) => {
-        axios.delete(`http://localhost:/beneficiaire/${id}`)
+        axios.delete(`http://localhost:9999/beneficiaire/${id}`)
         .then(() => {
             getData();
         })

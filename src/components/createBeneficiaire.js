@@ -31,7 +31,7 @@ export default function CreateBeneficiaire() {
     ]
 
     const postData = () => {
-        axios.post(`https://localhost:/client/`, {
+        axios.post(`https://localhost:9999/beneficiaire/`, {
             civilite,
             prenom,
             nom,
