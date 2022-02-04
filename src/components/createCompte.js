@@ -17,7 +17,7 @@ export default function CreateCompte() {
     ]
 
     const postData = () => {
-        axios.post(`http:localhost:/compte/`, { 
+        axios.post(`http:localhost:9999/agent/compte/`, { 
             solde,
             date,
             client

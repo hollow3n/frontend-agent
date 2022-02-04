@@ -16,7 +16,7 @@ export default function Update() {
     }, []);
 
     const updateAPIData = () => {
-        axios.put(`http://localhost:/compte/${id}`, { 
+        axios.put(`http://localhost:9999/compte/${id}`, { 
             solde
         }).then(() => {
             history.push('/read')

@@ -40,7 +40,7 @@ export default function UpdateBeneficiaire() {
     }, []);
 
     const updateAPIData = () => {
-        axios.put(`http://localhost:/beneficiaire/${id}`, { 
+        axios.put(`http://localhost:9999/beneficiaire/${id}`, { 
             civilite,
             prenom,
             nom,

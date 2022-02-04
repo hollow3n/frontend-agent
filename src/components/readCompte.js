@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function Read() {
     const [APIData, setAPIData] = useState([]);
     useEffect(() => {
-        axios.get(`https://localhost:/compte/`)
+        axios.get(`https://localhost:9999/compte/`)
             .then((response) => {
                 console.log(response.data)
                 setAPIData(response.data);
@@ -22,14 +22,14 @@ export default function Read() {
     }
 
     const getData = () => {
-        axios.get(`https://localhost:/compte/`)
+        axios.get(`https://localhost:9999/compte/`)
             .then((getData) => {
                 setAPIData(getData.data);
             })
     }
 
     const onDelete = (id) => {
-        axios.delete(`https://localhost:/compte/${id}`)
+        axios.delete(`https://localhost:9999/compte/${id}`)
         .then(() => {
             getData();
         })
